@@ -87,11 +87,11 @@ case $1 in
   greet)
     currenttime=$(date +%H:%M)
     if [[ "${currenttime}" > '18:00' ]]; then
-      action=$(random_param konbanha yoho)
+      action=konbanha
     elif [[ "${currenttime}" > '12:00' ]]; then
-      action=$(random_param konnichiha yoho)
+      action=konnichiha
     elif [[ "${currenttime}" > '04:00' ]]; then
-      action=$(random_param ohayou yoho)
+      action=ohayou
     else
       action=$(random_param yaa yoho)
     fi
