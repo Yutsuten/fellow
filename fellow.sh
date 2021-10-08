@@ -2,7 +2,7 @@
 
 DIR="$(dirname "$(readlink -f "$0")")"
 PLAY='mpv --really-quiet --volume=130'
-NOTIFY="notify-send -a fellow -i ${HOME}/Pictures/Icons/fellow.png"
+NOTIFY="notify-send -a fellow -i ${DIR}/icon.png"
 
 random_param() {
   eval echo "\$$(( RANDOM % $# + 1 ))"
