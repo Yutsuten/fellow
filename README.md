@@ -1,7 +1,5 @@
 # Fellow
 
-Display a notification with a Japanese girl voice.
-
 I created this as a hobby to integrate with other programs.
 I also wanted to use the audio files I found on
 [this site](https://soundeffect-lab.info/).
@@ -19,7 +17,7 @@ be aware that there are text in Japanese.
 ## Install
 
 1. Clone this repository
-2. Place an icon `icon.png` to the same directory you cloned this repository.
+2. Place an icon `icon.png` to the same directory you cloned this repository
 3. Run `make audio`
 4. Run `sudo make install`
 
