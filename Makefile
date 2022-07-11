@@ -20,6 +20,5 @@ audio:
 	curl -so 'audio/line-girl1-yoho1.mp3' 'https://soundeffect-lab.info/sound/voice/mp3/line-girl1/line-girl1-yoho1.mp3'
 
 install:
-	@echo '>> Symlink to binary folder <<'
-	mkdir -p ~/.local/bin
-	ln -sf $(CURDIR)/fellow.sh ~/.local/bin/fellow
+	@echo '>> Copy executable to /usr/local/bin <<'
+	cp -af $(CURDIR)/fellow.sh /usr/local/bin/fellow
