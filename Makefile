@@ -21,4 +21,12 @@ audio:
 
 install:
 	@echo '>> Copy executable to /usr/local/bin <<'
-	cp -af $(CURDIR)/fellow.sh /usr/local/bin/fellow
+	mkdir /usr/local/src/fellow
+	cp -af $(CURDIR)/fellow.sh /usr/local/src/fellow/fellow
+	cp -af $(CURDIR)/icon.png /usr/local/src/fellow/icon.png
+	cp -af $(CURDIR)/audio /usr/local/src/fellow/audio
+	ln -sf /usr/local/src/fellow/fellow /usr/local/bin/fellow
+
+uninstall:
+	rm -rf /usr/local/src/fellow
+	rm -f /usr/local/bin/fellow
