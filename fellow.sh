@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DIR="$(dirname "$(readlink -f "$0")")"
-PLAY='mpv --really-quiet --volume=130'
+PLAY='pw-play'
 NOTIFY="notify-send -a fellow -i ${DIR}/icon.png"
 
 random_param() {
