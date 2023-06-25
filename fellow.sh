@@ -2,7 +2,7 @@
 
 DIR="$(dirname "$(readlink -f "$0")")"
 PLAY='pw-play'
-NOTIFY="notify-send -a fellow -i ${DIR}/icon.png"
+NOTIFY="notify-send --app-name fellow --icon ${DIR}/icon.png"
 
 random_param() {
   eval echo "\$$(( RANDOM % $# + 1 ))"
