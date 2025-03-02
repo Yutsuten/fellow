@@ -20,13 +20,13 @@ audio:
 	curl -so 'audio/line-girl1-yoho1.mp3' 'https://soundeffect-lab.info/sound/voice/mp3/line-girl1/line-girl1-yoho1.mp3'
 
 install:
-	@echo '>> Copy executable to /usr/local/bin <<'
-	mkdir -p /usr/local/src/fellow
-	cp -af $(CURDIR)/fellow.sh /usr/local/src/fellow/fellow
-	cp -af $(CURDIR)/icon.png /usr/local/src/fellow/icon.png
-	cp -af $(CURDIR)/audio /usr/local/src/fellow/audio
-	ln -sf /usr/local/src/fellow/fellow /usr/local/bin/fellow
+	@echo '>> Copy files to ~/.local/share/fellow <<'
+	mkdir -p ~/.local/share/fellow
+	cp -af $(CURDIR)/fellow.fish ~/.local/share/fellow/fellow
+	cp -af $(CURDIR)/icon.png ~/.local/share/fellow/icon.png
+	cp -af $(CURDIR)/audio ~/.local/share/fellow/audio
+	ln -srf ~/.local/share/fellow/fellow ~/.local/bin/fellow
 
 uninstall:
-	rm -rf /usr/local/src/fellow
-	rm -f /usr/local/bin/fellow
+	rm -rf ~/.local/share/fellow
+	rm -f ~/.local/bin/fellow
