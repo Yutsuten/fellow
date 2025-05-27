@@ -2,7 +2,7 @@
 
 set base_dir (path dirname (path resolve (status filename)))
 set play mpv --msg-level=all=warn --volume=130
-set notify notify-send --app-name fellow --icon $base_dir/icon.png
+set notify notify-send --urgency low --app-name fellow --icon $base_dir/icon.png
 
 function interact --argument-names sentence
     switch $sentence
