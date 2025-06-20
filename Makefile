@@ -25,7 +25,7 @@ install:
 	cp -af $(CURDIR)/fellow.fish ~/.local/share/fellow/fellow
 	cp -af $(CURDIR)/icon.png ~/.local/share/fellow/icon.png
 	cp -af $(CURDIR)/audio ~/.local/share/fellow/audio
-	ln -nf ~/.local/share/fellow/fellow ~/.local/bin/fellow
+	ln -srf ~/.local/share/fellow/fellow ~/.local/bin/fellow
 
 uninstall:
 	rm -rf ~/.local/share/fellow
